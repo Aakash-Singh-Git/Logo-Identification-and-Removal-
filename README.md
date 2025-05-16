@@ -26,14 +26,14 @@ A desktop application for automated identification and removal of logos (e.g. Zo
 ---
 
 .
--├── data_create.py            # Synthetic dataset generation & annotation
--├── structure.py              # Dataset organization & train/val split
--├── yolo_model.py             # YOLOv8 model loading & inference wrappers
--├── Logo Remover Main.py      # Tkinter GUI & orchestrator for detection + inpainting
--├── requirements.txt          # Python dependencies (including ultralytics==8.0.114)
--├── data/                     # Place your images and labels here
--├── config.json               # API keys & paths for inpainting services
--└── api_keys.json             # (gitignored) Service credentials
+- ├── data_create.py            # Synthetic dataset generation & annotation
+- ├── structure.py              # Dataset organization & train/val split
+- ├── yolo_model.py             # YOLOv8 model loading & inference wrappers
+- ├── Logo Remover Main.py      # Tkinter GUI & orchestrator for detection + inpainting
+- ├── requirements.txt          # Python dependencies (including ultralytics==8.0.114)
+- ├── data/                     # Place your images and labels here
+- ├── config.json               # API keys & paths for inpainting services
+- └── api_keys.json             # (gitignored) Service credentials
 
 
 ## 📦 Installation
