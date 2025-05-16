@@ -2,11 +2,12 @@ import os, shutil
 from sklearn.model_selection import train_test_split
 import yaml
 
-BASE_DIR        = r"C:\Users\Aakash\Downloads\logo identification"
-AUG_IMG_TRAIN   = os.path.join(BASE_DIR, "augmented", "images", "train")
-AUG_LABEL_TRAIN = os.path.join(BASE_DIR, "augmented", "labels", "train")
-RAW_IMG_VAL     = os.path.join(BASE_DIR, "images", "val")
-RAW_LABEL_VAL   = os.path.join(BASE_DIR, "labels", "val")
+BASE_DIR        = os.path.dirname(os.path.abspath(__file__))
+AUG_IMG_TRAIN   = os.path.join(BASE_DIR, "logo identification", "augmented", "images", "train")
+AUG_LABEL_TRAIN = os.path.join(BASE_DIR, "logo identification", "augmented", "labels", "train")
+RAW_IMG_VAL     = os.path.join(BASE_DIR, "logo identification", "images", "val")
+RAW_LABEL_VAL   = os.path.join(BASE_DIR, "logo identification", "labels", "val")
+
 
 # 1) ensure raw-val dirs exist, then split-out 20% from augmented train
 os.makedirs(RAW_IMG_VAL,   exist_ok=True)

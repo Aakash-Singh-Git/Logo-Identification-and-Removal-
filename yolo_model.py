@@ -1,12 +1,14 @@
 import yaml
 from ultralytics import YOLO
+import os
 
 # ─── paths ─────────────────────────────────────────────────────────────────────
-DATA_YAML    = r"C:\Users\Aakash\Downloads\logo identification\dataset\data.yaml"
-BASE_MODEL   = "yolov8n.pt"           # you can also try yolov8s.pt, yolov8m.pt, etc.
-TUNE_DIR     = "runs/tune/logo"       # where tuning logs & best_hyperparameters.yaml will go
-FINAL_PROJECT= "runs/train"
-FINAL_NAME   = "logo_final"
+BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
+DATA_YAML   = os.path.join(BASE_DIR, "logo identification", "dataset", "data.yaml")
+BASE_MODEL  = os.path.join(BASE_DIR, "yolov8n.pt")          # or keep as-is if you package the model next to this script
+TUNE_DIR    = os.path.join(BASE_DIR, "logo identification", "runs", "tune", "logo")
+FINAL_PROJECT = os.path.join(BASE_DIR, "logo identification", "runs", "train")
+FINAL_NAME    = "logo_final"
 
 # ─── 1) initialize model ───────────────────────────────────────────────────────
 model = YOLO(BASE_MODEL)

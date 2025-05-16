@@ -1,0 +1,11 @@
+numpy
+opencv-python
+Pillow
+ultralytics==8.0.114
+torch
+requests
+PyYAML
+scikit-learn
+replicate
+requests-toolbelt
+pywin32

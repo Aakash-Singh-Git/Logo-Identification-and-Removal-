@@ -3,12 +3,15 @@ import numpy as np
 import os
 import random
 from glob import glob
+import sys
 
 # === PATHS ===
-LOGO_DIR = r"C:\Users\Aakash\Downloads\logo identification\Zoom"
-BG_DIR = r"C:\Users\Aakash\Downloads\logo identification\backgrounds"
-SAVE_IMG_DIR = r"C:\Users\Aakash\Downloads\logo identification\augmented\images\train"
-SAVE_LABEL_DIR = r"C:\Users\Aakash\Downloads\logo identification\augmented\labels\train"
+BASE_DIR       = os.path.dirname(os.path.abspath(__file__))
+LOGO_DIR       = os.path.join(BASE_DIR, "logo identification","Zoom")
+BG_DIR         = os.path.join(BASE_DIR, "logo identification","backgrounds")
+SAVE_IMG_DIR   = os.path.join(BASE_DIR, "logo identification","augmented", "images", "train")
+SAVE_LABEL_DIR = os.path.join(BASE_DIR, "logo identification","augmented", "labels", "train")
+
 
 # === CREATE OUTPUT FOLDERS IF NOT EXISTS ===
 os.makedirs(SAVE_IMG_DIR, exist_ok=True)
