@@ -1,0 +1,31 @@
+# 20/20 iterations complete ✅ (4293.86s)
+# Results saved to runs\tune\logo\evolve
+# Best fitness=0.99165 observed at iteration 3
+# Best fitness metrics are {'metrics/precision(B)': 0.99602, 'metrics/recall(B)': 1.0, 'metrics/mAP50(B)': 0.995, 'metrics/mAP50-95(B)': 0.99128, 'val/box_loss': 0.19956, 'val/cls_loss': 1.63528, 'val/dfl_loss': 0.84163, 'fitness': 0.99165}
+# Best fitness model is runs\tune\logo\train3
+# Best fitness hyperparameters are printed below.
+
+lr0: 0.01
+lrf: 0.01
+momentum: 0.94985
+weight_decay: 0.0005
+warmup_epochs: 3.27238
+warmup_momentum: 0.71752
+box: 7.5
+cls: 0.48242
+dfl: 1.5
+hsv_h: 0.01561
+hsv_s: 0.64955
+hsv_v: 0.37903
+degrees: 0.0
+translate: 0.1
+scale: 0.49537
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5012
+bgr: 0.0
+mosaic: 0.99433
+mixup: 0.0
+cutmix: 0.0
+copy_paste: 0.0
