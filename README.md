@@ -25,7 +25,8 @@ A desktop application for automated identification and removal of logos (e.g. Zo
 
 ---
 
-.
+## Structure
+
 - ├── data_create.py            # Synthetic dataset generation & annotation
 - ├── structure.py              # Dataset organization & train/val split
 - ├── yolo_model.py             # YOLOv8 model loading & inference wrappers
